@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_travel_head" name="Travel Umroh"  sequence="1" groups="sales_team.group_sale_salesman"/>
+        <menuitem id="menu_master_data_travel" name="Master Data" parent="asb_travel_umroh.menu_travel_head" sequence="1" groups="sales_team.group_sale_salesman"/>
+        <menuitem id="menu_transaction_travel" name="Transaction Travel" parent="asb_travel_umroh.menu_travel_head"  sequence="1" groups="sales_team.group_sale_salesman"/>
+        <menuitem id="menu_product_travel" sequence="1" name="Product" parent="asb_travel_umroh.menu_master_data_travel" action="sale.product_template_action"/>
+        <menuitem id="menu_packet_product" name="Packet Product" sequence="2" parent="asb_travel_umroh.menu_master_data_travel" action="mrp.mrp_bom_form_action"/>
+        <menuitem id="menu_jemaah_travel" name="Jemaah" sequence="3" parent="asb_travel_umroh.menu_master_data_travel" action="account.res_partner_action_customer"/>
+        <menuitem id="menu_airlines_travel" name="Airlines" sequence="4" parent="asb_travel_umroh.menu_master_data_travel" action="asb_travel_umroh.res_partner_action_airline"/>
+        <menuitem id="menu_hotels_travel" name="Hotel" sequence="5" parent="asb_travel_umroh.menu_master_data_travel" action="asb_travel_umroh.res_partner_action_hotel"/>
+    </data>
+</odoo>
